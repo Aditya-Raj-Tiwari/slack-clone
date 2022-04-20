@@ -1,0 +1,80 @@
+@import "variables.scss";
+
+.sidebar {
+  background-color: $color-slack;
+  border-top: 1px solid $color-light-slack;
+  max-width: 260px;
+  color: $color-white;
+
+  .sidebar__header {
+    display: flex;
+    border-bottom: 1px solid $color-light-slack;
+    padding-bottom: 10px;
+    padding: 13px;
+
+    & > .MuiSvgIcon-root {
+      padding: 8px;
+      color: $color-light-slack;
+      font-size: 1.2rem;
+      border-radius: 999px;
+      background-color: $color-white;
+    }
+  }
+
+  .sidebar__info {
+    flex: 1;
+
+    & > h2 {
+      font-size: 1rem;
+      font-weight: 900;
+      margin-bottom: 5px;
+    }
+
+    & > h3 {
+      display: flex;
+      align-items: center;
+      font-size: 13px;
+      font-weight: 400;
+
+      & > .MuiSvgIcon-root {
+        font-size: 14px;
+        margin-top: 1px;
+        margin-right: 2px;
+        color: $color-green;
+      }
+    }
+  }
+
+  .sidebarOption {
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.9;
+      background-color: $color-light-slack;
+    }
+
+    .sidebarOption__icon {
+      padding: 10px;
+      font-size: 0.86rem !important;
+    }
+
+    .sidebarOption__channel {
+      padding: 10px 0;
+      .sidebarOption__hash {
+        padding: 10px;
+      }
+    }
+
+    & > h3 {
+      font-weight: 500;
+    }
+  }
+
+  hr {
+    border-bottom: 1px solid $color-light-slack;
+    margin: 10px 0;
+  }
+}
